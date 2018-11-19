@@ -1,0 +1,115 @@
+.header {
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    box-shadow: 2px 2px 5px @shadow;
+    border-bottom: 1px solid @eee;
+    .header-top {
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid @ccc;
+        .header-top-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span {
+                    color: @333;
+                    display: inline-block;
+                }
+                span:nth-child(2) {
+                    padding-left: 44px;
+                    padding-right: 10px;
+                    img {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+            .right {
+                span {
+                    cursor: pointer;
+                    display: inline-block;
+                }
+                .user {
+                    position: relative;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        left: -36px;
+                        top: 5px;
+                    }
+                }
+                .line {
+                    margin: 0 6px;
+                }
+            }
+        }
+    }
+    .header-center {
+        height: 100px;
+        line-height: 100px;
+        .header-center-content {
+            display: flex;
+            justify-content: space-between;
+            #logo {
+                height: 100px;
+                .logo-tit {
+                    height: 100%;
+                    a {
+                        display: inline-block;
+                        width: 279px;
+                        height: 64px;
+                        margin-top: 18px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                    }
+
+                }
+                .logo-subtit {
+                    display: none;
+                }
+            }
+            .link-item {
+                span {
+                    display: inline-block;
+                    width: 90px;
+                    height: 42px;
+                    line-height: 42px;
+                    text-align: center;
+                    margin-right: 18px;
+                    cursor: pointer;
+                    font-size: @font_size_18;
+                    a {
+                        display: inline-block;
+                        border-radius: 21px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .nuxt-link-exact-active {
+                        background-color: #EB2F30;
+                        color: @fff;
+                        box-shadow: 3px 4px 8px rgba(235,47,48,0.3);
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// 消除图片的默认边框
+img[src=""], img:not([src]) {
+    opacity: 0;
+}

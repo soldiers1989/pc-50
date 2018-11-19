@@ -1,0 +1,41 @@
+{
+    "name": "50etf-pc",
+    "version": "1.0.0",
+    "description": "Nuxt.js project",
+    "author": "chenjie <chenjiecloud@163.com>",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+        "precommit": "npm run lint"
+    },
+    "config": {
+        "nuxt": {
+            "host": "127.0.0.1",
+            "port": "8888"
+        }
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "element-ui": "^2.4.5",
+        "node-jsencrypt": "^1.0.0",
+        "nuxt": "^1.0.0",
+        "sockjs": "^0.3.19",
+        "sockjs-client": "^1.1.4",
+        "stompjs": "^2.3.3"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.2.1",
+        "css-loader": "^1.0.0",
+        "eslint": "^4.15.0",
+        "eslint-friendly-formatter": "^3.0.0",
+        "eslint-loader": "^1.7.1",
+        "eslint-plugin-vue": "^4.0.0",
+        "less": "^3.5.3",
+        "less-loader": "^4.1.0",
+        "style-loader": "^0.21.0"
+    }
+}

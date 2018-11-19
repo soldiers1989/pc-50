@@ -1,0 +1,106 @@
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+/* 全局路由动画 */
+.page-enter-active, .page-leave-active {
+    transition: opacity .4s;
+}
+.page-enter, .page-leave-active {
+    opacity: 0;
+}
+
+.fontRed {
+    color: #ff3d3d !important;
+}
+
+.fontGreen {
+    color: #1FAF31 !important;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapFull {
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrap-component {
+    margin-top: 140px;
+}
+
+input[type='checkbox']{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    -webkit-appearance:none;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    outline: none;
+    position: relative;
+    top: 3px;
+    right: 4px;
+}
+
+input[type=checkbox]:checked {
+    background: url("../../static/images/confirm.png")no-repeat center;
+}
+
+/* 浮动 */
+.fl { float: left; }
+.fr { float: right; }
+.cf { zoom: 1; }
+.cf:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+i {
+    font-style: normal;
+}
+
+.avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+
+.wes { /* 多出部分用省略号表示 , 用于一行 */
+    overflow:hidden;
+    word-wrap:normal;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
